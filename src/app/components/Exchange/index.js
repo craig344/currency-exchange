@@ -1,7 +1,4 @@
-import { Button, Typography, Col, Input, InputNumber, notification, Row, Select, Spin, Steps, Alert } from 'antd';
-import Avatar from 'antd/lib/avatar/avatar';
-import Meta from 'antd/lib/card/Meta';
-import Form from 'antd/lib/form/Form';
+import { Button, Typography, Col, InputNumber, notification, Row, Select, Spin, Steps } from 'antd';
 import React, { Component } from 'react';
 import { fetchApi } from '../../../services/api';
 const { Step } = Steps;

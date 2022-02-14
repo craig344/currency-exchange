@@ -1,4 +1,4 @@
-import { Card, Col, notification, Row, Spin } from 'antd';
+import { Card, Col, Row, Spin } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
 import Meta from 'antd/lib/card/Meta';
 import React, { Component } from 'react';

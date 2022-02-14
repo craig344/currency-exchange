@@ -1,6 +1,5 @@
 import { Button, Col, Input, notification, Form, DatePicker, Row, Spin } from 'antd';
 import moment from 'moment';
-import react from 'react';
 import React, { Component } from 'react';
 import { fetchApi } from '../../../services/api';
 

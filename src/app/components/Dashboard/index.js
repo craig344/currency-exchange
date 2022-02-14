@@ -44,12 +44,12 @@ class Dashboard extends Component {
             let currency = this.state.currencies.find((currency) => currency.id === val.currency_id)
             let flag = currency.code.toLowerCase()
             return(
-            <Col xxl={2} xl={3} lg={4} md={6} sm={8} xs={12} key={i}>
+            <Col xxl={3} lg={4} md={6} sm={8} xs={12} key={i}>
               <Card>
                 <Meta
                   avatar={<Avatar src={'/flags/' + flag + '.png'} />}
                   title={currency.code}
-                  description={val.amount}
+                  description={val.amount.toFixed(2)}
                 />
               </Card>
             </Col>

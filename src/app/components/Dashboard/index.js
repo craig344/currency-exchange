@@ -1,4 +1,4 @@
-import { Card, Col, Row, Spin } from 'antd';
+import { Card, Col, Empty, Row, Skeleton, Spin } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
 import Meta from 'antd/lib/card/Meta';
 import React, { Component } from 'react';
@@ -40,7 +40,7 @@ class Dashboard extends Component {
           </Col>
         </Row>
         <Row>
-          {this.state.currencies && this.state.userData.balances && this.state.userData.balances.map((val, i) => {
+          {this.state.currencies && this.state.userData.balances ? this.state.userData.balances.map((val, i) => {
             let currency = this.state.currencies.find((currency) => currency.id === val.currency_id)
             let flag = currency.code.toLowerCase()
             return(
@@ -53,7 +53,12 @@ class Dashboard extends Component {
                 />
               </Card>
             </Col>
-          )})}
+          )}) : (
+            <Col span={24}>
+              <Empty />
+            </Col>
+          )
+        }
         </Row>
         </Spin>
       </>

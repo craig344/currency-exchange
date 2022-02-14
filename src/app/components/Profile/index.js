@@ -53,7 +53,7 @@ class Profile extends Component {
     }
 
     formChange = (change) => {
-        if ((change[0].name[0] !== 'dob' && this.state.userData[change[0].name[0]] !== change[0].value) || (change[0].name[0] === 'dob' && this.state.userData[change[0].name[0]] !== change[0].value.format('YYYY-MM-DD'))) {
+        if (change[0].value && ((change[0].name[0] !== 'dob' && this.state.userData[change[0].name[0]] !== change[0].value) || (change[0].name[0] === 'dob' && this.state.userData[change[0].name[0]] !== change[0].value.format('YYYY-MM-DD')))) {
             this.setState({ disableUpdate: false })
         } else {
             this.setState({ disableUpdate: true })

@@ -1,0 +1,1 @@
+export const ApiUrl = 'https://homechallenge.volopa.com/';

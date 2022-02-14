@@ -54,3 +54,6 @@ In the project directory, you can run:
 - Home button / link
 
 ![profile](/screenshots/profile2.png)
+
+## Known Issues
+- After the access token is refreshed once, the token refresh api fails if a token refresh is attempted again.
